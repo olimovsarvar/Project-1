@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    display: flex;
+    max-width: 1020px;
+    gap: 100px;
+}
+
+.nav-lists {
+    display: flex;
+    gap: 60px;
+}
+
+.register-btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.register-btn .get-consultation {
+    width: 150px;
+    height: 40px;
+    border: 1px solid red;
+    color: red;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+}
+
+.register-btn .get-consultation:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.register-btn .log-in {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav-lists li a {
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-lists li a:hover {
+    color: red;
+
+}
+
+/* ending of navbar */
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #000000;
+    margin: 0;
+}
+
+.filters {
+    display: flex;
+    gap: 50px;
+    margin: 20px 0;
+    justify-content: center;
+
+}
+
+.filters select,
+.filters input,
+.filters button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.filters select,
+.filters input,
+.filters button:focus{
+    outline: none;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+
+.time {
+    display: grid;
+}
+
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ff0000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.date .day {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 62.4px;
+    letter-spacing: 1px;
+}
+
+.date .month {
+    color: black;
+}
+
+.date .lasting{
+    color: black;
+}
+
+.details h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(30, 33, 44, 1);
+}
+
+.details p {
+    text-align: start;
+    margin: 5px 0;
+    color: rgba(120, 122, 128, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+
+.view-more {
+    margin-left: auto;
+    color: #ff0000;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.view-more:hover {
+    background-color: #e63939;
+    color: white;
+}
+
+
+/* subscribe section */
+
+.subscribe-section {
+    background: linear-gradient(to right, #fddbd2, #f7c5c2);
+    width: 100%;
+    height: 564px;
+    padding: 100px ;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-subscribe{
+    margin-top: 80px;
+}
+
+.subscribe-section .subtitle {
+    color: rgba(30, 33, 44, 1);
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.subscribe-section h1 {
+    max-width: 810px;
+    margin: 0 auto;
+    color: rgba(30, 33, 44, 1);
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 59.8px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.subscribe-form input {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 422px;
+    height: 52px;
+}
+.subscribe-form input:focus{
+    outline: none;
+}
+
+.subscribe-form button {
+    background-color: transparent;
+    color: #ff0000;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid red;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.subscribe-form button:hover {
+    color: white;
+    background-color: #ff2a00;
+}
+
+
+.footer-section{
+    background-color: rgba(30, 33, 44, 1);
+    height: 396px;
+    position: relative;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.footer-main h6{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.definition{
+    max-width: 279px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.definition-main{
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-links i{
+    color: rgba(255, 255, 255, 0.567);
+    transition: 0.2s ease-in;
+}
+
+.social-links i:hover{
+    color: orangered;
+}
+
+
+.definition,
+.courses,
+.site-map,
+.contact,
+.sign-up{
+    padding: 60px 0;
+}
+
+.sign-up{
+    max-width: 286px;
+    max-height: 126px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sign-up p{
+    color: rgba(255, 255, 255, 0.616);
+    line-height: 15px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.footer-main ul li 
+{
+    padding: 5px 0;
+}
+.footer-main ul li a{
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    transition: 0.2s ease;
+}
+
+.footer-main ul li a:hover{
+    color: rgb(255, 85, 0);
+}
+
+.search-events  .search-input{
+    width: 285px;
+    height: 42px;
+    outline: none;
+    padding: 0 10px;
+    color: rgb(103, 103, 103);
+}
+.search-events .bi-search{
+    position: absolute;
+    top: 116px;
+    right: 70px;
+}
+
+
+.footer-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 800px;
+    background-color: rgba(39, 40, 46, 0.582);
+    height: 58px;
+    color: rgba(169, 169, 169, 0.597);
+}
+.footer-info .nv-top{
+    cursor: pointer;
+}
+
+.bi-heart{
+    color: red;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-lists {
+        gap: 10px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .view-more{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .details p{
+        text-align: center;
+        padding: 10px 0;
+    }
+    .footer-section{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .register-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .event {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .date {
+        flex-direction: column;
+    }
+
+    .subscribe-section h1 {
+        font-size: 24px;
+    }
+
+    .footer-section{
+        display:none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filters {
+        gap: 10px;
+    }
+
+    .subscribe-form input {
+        width: 90%;
+    }
+}
+
+@media (max-width: 568px) {
+    /* Navbar adjustments */
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-lists {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .register-btn {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .register-btn .get-consultation,
+    .register-btn .log-in {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Filters adjustments */
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .filters select,
+    .filters input,
+    .filters button {
+        width: 100%;
+    }
+
+    /* Event section adjustments */
+    .events {
+        gap: 15px;
+    }
+
+    .event {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .date {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .details h3 {
+        font-size: 14px;
+    }
+
+    .details p {
+        font-size: 12px;
+    }
+
+    .view-more {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Subscribe section adjustments */
+    .subscribe-section {
+        padding: 60px 15px;
+    }
+
+    .subscribe-section h1 {
+        font-size: 22px;
+    }
+
+    .subscribe-form input {
+        width: 90%;
+    }
+
+    .subscribe-form button {
+        width: 90%;
+    }
+
+    /* Footer adjustments */
+    .footer-main {
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-main ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
